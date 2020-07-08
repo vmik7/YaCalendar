@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calendar</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<a href="http://www.yandex.ru" class="logo__a">
+				<img src="https://yastatic.net/yandex-events-frontend2/_/TnsElYf965XuZKVEKb1vc3bW-1A.svg" alt="Logo" class="logo__img">
+			</a>
+		</div>
+		<ul class="nav">
+			<li class="nav__item">
+				<a href="#" class="nav__a nav__a_active">Календарь</a>
+			</li>
+			<!--<li class="nav__item">
+				<a href="#" class="nav__a">Кай дойти</a>
+			</li>-->
+			<li class="nav__item">
+				<a href="#" class="nav__a nav__a_active"></a>
+			</li>
+		</ul>
+	</header>
+	<section class="content">
+		<article class="group">
+			<h1 class="group__head">Основы HTML/JS</h1>
+			<div class="card-wrapper">
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">5 марта</p>
+						<div class="card__header">Введение в CSS</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								отрисовка блоков по умолчанию, блочные/inline-block/инлайновые блоки
+							</li>
+							<li class="card__list-item">
+								селекторы
+							</li>
+							<li class="card__list-item">
+								каскадирование, приоритетность стилей, веса селекторов
+							</li>
+							<li class="card__list-item">
+								величины и единицы измерения
+							</li>
+							<li class="card__list-item">
+								оформление текста
+							</li>
+							<li class="card__list-item">
+								блочная модель, display, width, height и компания
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">7 марта</p>
+						<div class="card__header">CSS, часть 2</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								позиционирование
+							</li>
+							<li class="card__list-item">
+								флоаты
+							</li>
+							<li class="card__list-item">
+								флексы
+							</li>
+							<li class="card__list-item">
+								типовые задачи - центрирование, верстка колонок, карточек, пунктов меню
+							</li>
+							<li class="card__list-item">
+								псевдоклассы
+							</li>
+							<li class="card__list-item">
+								псевдоэлементы
+							</li>
+							<li class="card__list-item">
+								семантическая разметка
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">12 марта</p>
+						<div class="card__header">Верстка</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								Практический семинар
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">14 марта</p>
+						<div class="card__header">Введение в JS</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								(возможно) разбор ДЗ по верстке
+							</li>
+							<li class="card__list-item">
+								для чего? отличия разработки - реакция на события vs непрерывного выполнения
+							</li>
+							<li class="card__list-item">
+								доставка в браузер - тег script
+							</li>
+							<li class="card__list-item">
+								основы синтаксиса - обработка кода построчно интерпретатором, точки с запятой
+							</li>
+							<li class="card__list-item">
+								типы данных: примитивные, массив, объект, оператор typeof
+							</li>
+							<li class="card__list-item">
+								блочная модель, display, width, height и компания
+							</li>
+							<li class="card__list-item">
+								простые операторы: математика, склейка строк, булевские
+							</li>
+							<li class="card__list-item">
+								переменные
+							</li>
+							<li class="card__list-item">
+								alert/confirm/prompt/console.log
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card ">
+					<div class="card__head">
+						<p class="card__date">19 марта</p>
+						<div class="card__header card__header-small">Базовые конструкции языка</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								условные операторы if/switch/тернарник
+							</li>
+							<li class="card__list-item">
+								циклы for/while/do..while
+							</li>
+							<li class="card__list-item">
+								бесконечный цикл
+							</li>
+							<li class="card__list-item">
+								break/continue
+							</li>
+							<li class="card__list-item">
+								функции, аргументы, аргументы по умолчанию
+							</li>
+							<li class="card__list-item">
+								основы замыканий (оч лайтово про доступность внешнего)
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">21 марта</p>
+						<div class="card__header">Массивы</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								создание, обход элементов массива, добавление/удаление элементов
+							</li>
+							<li class="card__list-item">
+								методы .map/.reduce/.forEach/.some/.every и так далее
+							</li>
+							<li class="card__list-item">
+								алгоритмы/задачки про массивы
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">26 марта</p>
+						<div class="card__header">Объекты</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								объектный литерал, поля, методы
+							</li>
+							<li class="card__list-item">
+								this
+							</li>
+							<li class="card__list-item">
+								функции-конструкторы
+							</li>
+							<li class="card__list-item">
+								величины и единицы измерения
+							</li>
+							<li class="card__list-item">
+								JSON
+							</li>
+							<li class="card__list-item">
+								(возможно) es6 классы
+							</li>
+							<li class="card__list-item">
+								объекты-обертки
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="group">
+			<h1 class="group__head">JS в браузере</h1>
+			<div class="card-wrapper">
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">28 марта</p>
+						<div class="card__header">События</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								click, contextmenu, mouseenter/mouseleave, mouseover/mouseout
+							</li>
+							<li class="card__list-item">
+								keypress/keyup/keydown
+							</li>
+							<li class="card__list-item">
+								input/submit/change
+							</li>
+							<li class="card__list-item">
+								load/error/DOMContentLoaded
+							</li>
+							<li class="card__list-item">
+								addEventListener
+							</li>
+							<li class="card__list-item">
+								всплытие
+							</li>
+							<li class="card__list-item">
+								примеры компонентов/виджетов на все события
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">2 апреля</p>
+						<div class="card__header">Работа с формами</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								input text/checkbox/radio
+							</li>
+							<li class="card__list-item">
+								(возможно) html5 input-ы
+							</li>
+							<li class="card__list-item">
+								select
+							</li>
+							<li class="card__list-item">
+								textarea
+							</li>
+							<li class="card__list-item">
+								валидация формы
+							</li>
+							<li class="card__list-item">
+								обработка формы на клиенте
+							</li>
+							<li class="card__list-item">
+								неэлементы форм
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">4 апреля</p>
+						<div class="card__header">BOM и основы DOM</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								location
+							</li>
+							<li class="card__list-item">
+								history
+							</li>
+							<li class="card__list-item">
+								navigator (navigator.geolocation)
+							</li>
+							<li class="card__list-item">
+								document.getElementById
+							</li>
+							<li class="card__list-item">
+								объект-узел
+							</li>
+							<li class="card__list-item">
+								innerHTML/innerText
+							</li>
+							<li class="card__list-item">
+								работа с атрибутами
+							</li>
+							<li class="card__list-item">
+								style
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">9 апреля</p>
+						<div class="card__header card__header-small">Продвинутая работа с DOM</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								document.getElementsByClassName, HtmlCollection
+							</li>
+							<li class="card__list-item">
+								querySelector/querySelectorAll, NodeList
+							</li>
+							<li class="card__list-item">
+								document.body
+							</li>
+							<li class="card__list-item">
+								перемещение по DOM - children, siblings, parent
+							</li>
+							<li class="card__list-item">
+								getComputedStyle
+							</li>
+							<li class="card__list-item">
+								className/classList
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">11 апреля</p>
+						<div class="card__header">Шаблонизация</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								склейка строк + innerHTML
+							</li>
+							<li class="card__list-item">
+								createElement, appendChild, insertAfter
+							</li>
+							<li class="card__list-item">
+								createDocumentFragment
+							</li>
+							<li class="card__list-item">
+								ванильное создание верстки
+							</li>
+							<li class="card__list-item">
+								двупроходная шаблонизация - пишем несложный шаблонизатор средствами браузера
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">16 апреля</p>
+						<div class="card__header">AJAX</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								XMLHttpRequest
+							</li>
+							<li class="card__list-item">
+								примеры - постраничность, обновление результатов матча, регистрация
+							</li>
+							<li class="card__list-item">
+								(возможно) WebSocket
+							</li>
+							<li class="card__list-item">
+								работа с API чего-нибудь
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">18 апреля</p>
+						<div class="card__header">JQuery</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								Jquery
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">23 апреля</p>
+						<div class="card__header card__header-small">Работа со сторонними библиотеками</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								В древние времена находили модули абы где, скачивали, пытались как-то вкрутить, все грустно
+							</li>
+							<li class="card__list-item">
+								Теперь есть гитхаб, на котором есть все, куча документации и обновлений, йохохо
+							</li>
+							<li class="card__list-item">
+								Как отличить классный модуль от так себе модуля
+							</li>
+							<li class="card__list-item">
+								Как пользоваться документаций, как в общих чертах заставить модуль работать
+							</li>
+							<li class="card__list-item">
+								Всякие классные модули по направленностям
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="group">
+			<h1 class="group__head">Node JS и продвинутый JS</h1>
+			<div class="card-wrapper">
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">25 апреля</p>
+						<div class="card__header">Введение в node.js</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								откуда взялся
+							</li>
+							<li class="card__list-item">
+								установка
+							</li>
+							<li class="card__list-item">
+								запуск скриптов
+							</li>
+							<li class="card__list-item">
+								обзорно про es6 let-const-стрелки
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">30 апреля</p>
+						<div class="card__header card__header-small">Асинхронный код в JS</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								откуда берется асинхронность в однопоточном JS
+							</li>
+							<li class="card__list-item">
+								коллбеки
+							</li>
+							<li class="card__list-item">
+								промисы
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">2 мая</p>
+						<div class="card__header">NPM & Express</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								npm модули - поиск и использование
+							</li>
+							<li class="card__list-item">
+								как написать и опубликовать свой модуль
+							</li>
+							<li class="card__list-item">
+								простое HTTP приложение
+							</li>
+							<li class="card__list-item">
+								миддлвары
+							</li>
+							<li class="card__list-item">
+								статика
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">7 мая</p>
+						<div class="card__header">Базы данных</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								Зачем вообще
+							</li>
+							<li class="card__list-item">
+								MongoDB
+							</li>
+							<li class="card__list-item">
+								Подключаем в приложеньку
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">9 мая</p>
+						<div class="card__header">Практика</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								Написание приложения
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="group">
+			<h1 class="group__head">Инструменты и библиотеки</h1>
+			<div class="card-wrapper">
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">14 мая</p>
+						<div class="card__header">Git</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								системы контроля версий - от папочек с кодом к умным программам
+							</li>
+							<li class="card__list-item">
+								что такое репозиторий что валяется в папочке .git
+							</li>
+							<li class="card__list-item">
+								git init
+							</li>
+							<li class="card__list-item">
+								git add, git commit, что такое коммит
+							</li>
+							<li class="card__list-item">
+								что такое ветки, git branch
+							</li>
+							<li class="card__list-item">
+								git merge, git rebase, как гит вычисляет коммиты
+							</li>
+							<li class="card__list-item">
+								конфликты, git status
+							</li>
+							<li class="card__list-item">
+								общение с удаленным репозиторием (git push/git pull/git fetch)
+							</li>
+							<li class="card__list-item">
+								консоль или клиенты?
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">16 мая</p>
+						<div class="card__header card__header-small ">Тестирование - инфра</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								unit
+							</li>
+							<li class="card__list-item">
+								ручное тестирование интерфейсов, ямлы
+							</li>
+							<li class="card__list-item">
+								hermione
+							</li>
+							<li class="card__list-item">
+								стабы
+							</li>
+							<li class="card__list-item">
+								скриншоты
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">21 мая</p>
+						<div class="card__header card__header-small ">Инфраструктурные инструменты - инфра</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								гит-хуки
+							</li>
+							<li class="card__list-item">
+								линтеры
+							</li>
+							<li class="card__list-item">
+								csscomb
+							</li>
+							<li class="card__list-item">
+								что-то еще
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">23 мая</p>
+						<div class="card__header">CI - инфра</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								деплой на продакшн руками по фтп/гит клон на продакшн сервере/силами роботов
+							</li>
+							<li class="card__list-item">
+								github хуки - узнают что пора
+							</li>
+							<li class="card__list-item">
+								настройка выкладки на примере travis
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">28 мая</p>
+						<div class="card__header">BEM</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								*тут @dustyo_O должен был что-то написать
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__head">
+						<p class="card__date">30 мая</p>
+						<div class="card__header">Сборка</div>
+					</div>
+					<div class="card__text">
+						<ul class="card__list">
+							<li class="card__list-item">
+								Для чего? Примеры задач, где сборка помогает
+							</li>
+							<li class="card__list-item">
+								Пример настройки webpack
+							</li>
+							<li class="card__list-item">
+								???
+							</li>
+						</ul>
+					</div>
+					<div class="card__rcorner">
+						<img src="img/done.svg" alt="OK" class="card__done">
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="group group_hack">
+			<h1 class="group__head">Хакатоны</h1>
+			<div class="group__wrap">
+				<h2 class="group__sub-head">Примерные даты:</h2>
+				<ul class="group__list">
+					<li class="group__list-item">25 мая</li>
+					<li class="group__list-item">1 июня</li>	
+					<li class="group__list-item">8 июня</li>	
+				</ul>
+			</div>
+		</article>
+	</section>
+	<footer class="footer">
+		<div class="footer__text-block">
+			Created by @vmik7 for @dustyo_O
+		</div>
+	</footer>
+	<div class="label" id="scrollto">К текущему</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
